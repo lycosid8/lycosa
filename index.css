@@ -23,7 +23,18 @@ a:hover {color:#181818;	border: 1px solid transparent; border-image: url("data/i
 a:active {color:#fff;}
     
 
-    
+#header1{
+
+   display:flex;
+      justify-content:center;
+       align-items:center;
+      float: bottom;
+      text-align:center;
+     align-self:center;
+
+
+  
+}
     
 
 #mainblock{
