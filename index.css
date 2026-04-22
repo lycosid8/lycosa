@@ -35,7 +35,24 @@ a:active {color:#fff;}
 
   
 }
-    
+   #clouds{
+-webkit-animation: cloudScroll 3s linear infinite;
+animation: cloudScroll 3s linear infinite;
+background-image: src("data/images/random/clouds.png");
+background-repeat: repeat-x;
+   }
+
+       @-webkit-keyframes cloudScroll {
+        0% {transform: translateX(-128px);}
+        100% {transform: translateX(0px);}
+        }
+
+    @keyframes cloudScroll {
+        0% {transform: translateX(-128px);}
+        100% {transform: translateX(-0px);}
+        }
+
+   
 
 #mainblock{
   
