@@ -1,0 +1,57 @@
+html{
+    background-image: url('data/image/bg/bg_bars.gif');
+}
+
+#cons{
+    background-color: #202020;
+    margin:500px;
+    align-content: center;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-content: center;
+    justify-content: center;
+}   
+
+.cons_head{
+    color: #fff;
+    font-family: 'vcrosdmono', monospace;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: #031770 -6px 6px 2px;
+}
+
+.cons_body{
+    color: #fff;
+    font-family: 'vcrosdmono', monospace;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -60px;
+    text-shadow: #160020 -6px 6px 2px;
+}
+
+.cons_sig{
+    color: #fff;
+    font-family: 'vcrosdmono', monospace;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -20px;
+    text-shadow: #080349 -6px 6px 2px;
+}
+
+.cons_cute{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: screen;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'vcrosdmono';
+    src: url('data/fonts/VCR_OSD_MONO_1.001.ttf');
+}
