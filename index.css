@@ -1,53 +1,79 @@
+
+
 html{
+    cursor: crosshair;
     background-image: url('data/image/bg/bg_bars.gif');
+    
 }
 
-#cons{
-    background-color: #202020;
-    margin:500px;
-    align-content: center;
+.warning{
+    
+    font-family: monospace;
+    font-size: 2em;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    align-content: center;
-    justify-content: center;
-}   
+    color:#f4f4f4;
+    background-color:#181818;
+    width: 500px;
+    margin: auto;
+    padding:10px;
+    padding: 12px;
+    border-image: url("data/image/ants.gif") 1 repeat;
+    border-image-width: 3px;
+    
+}
 
-.cons_head{
-    color: #fff;
-    font-family: 'vcrosdmono', monospace;
-    font-size: 100px;
+
+
+.enter{
+    
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 43px;
     text-align: center;
-    text-shadow: #031770 -6px 6px 2px;
+    border: solid 1px #fafafa;
+    background-color:#0a0a0a;
+    padding: 2px;
+    width: 350px;
+    margin: auto;
+    margin-top:-15px;
+    transform: rotate(2deg);
+    letter-spacing:8px;
+    cursor: crosshair;
+
+
 }
 
-.cons_body{
-    color: #fff;
-    font-family: 'vcrosdmono', monospace;
-    font-size: 30px;
-    text-align: center;
-    margin-top: -60px;
-    text-shadow: #160020 -6px 6px 2px;
+.enter a{
+    
+    all:unset;
+    position:relative;
+    cursor:crosshair;
 }
 
-.cons_sig{
-    color: #fff;
-    font-family: 'vcrosdmono', monospace;
-    font-size: 30px;
-    text-align: center;
-    margin-top: -20px;
-    text-shadow: #080349 -6px 6px 2px;
+.enter:hover{
+    animation:jitter 0.8s steps(1,end) infinite;
+    text-shadow:2px 2px 0px #e6e6e6;
+    color:#000000;
+    background-color:#f4f4f4;
+border: solid 2px #f4f4f4;
+    border-image: url("data/image/ants.gif") 1 repeat;
+    cursor: crosshair;
 }
 
-.cons_cute{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    mix-blend-mode: screen;
-}
-
-
+@keyframes jitter
+		{
+		0%	{ transform: skew(-7deg) translate(0px, 0px) scalex(1) scaley(1.03) rotate(0deg);}
+		10%	{ transform: skew(0.3deg) translate(-1px, 0px) scalex(1.07) scaley(1) rotate(0deg); }
+		20%	{ transform: skew(2deg) translate(3px, 0px) scalex(1) scaley(1) rotate(0deg); }
+		30%	{ transform: skew(0deg) translate(0px, 2px) scalex(1.08) scaley(1) rotate(0deg); }
+		40%	{ transform: skew(-0.5deg) translate(1px, -5px) scalex(1) scaley(1.004) rotate(0deg); }
+		50%	{ transform: skew(-0.5deg) translate(0px, 0px) scalex(1.1) scaley(1) rotate(0deg); }
+		60%	{ transform: skew(0deg) translate(-3px, 0px) scalex(1) scaley(1) rotate(0deg); }
+		70%	{ transform: skew(0.5deg) translate(-1px, -4px) scalex(0.95) scaley(1) rotate(0deg); }
+		80%	{ transform: skew(3deg) translate(3px, 0px) scalex(1) scaley(1.03) rotate(0deg); }
+		90%	{ transform: skew(1deg) translate(0px, 0px) scalex(1.08) scaley(1) rotate(0deg); }
+		100%	{ transform: skew(-0.5deg) translate(1px, 5px) scalex(1) scaley(1.12) rotate(0deg); }
+		}
 
 
 
