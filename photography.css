@@ -1,0 +1,57 @@
+html{
+    cursor: crosshair;
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: -100px;
+}
+
+.header{
+    color: #fff;
+    font-family: monospace;
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: -25px;
+    text-shadow: #1b1b1b -8px 8px 5px;
+}
+
+.sub{
+    color: #ccc;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.photoz{
+    width: 500px;
+}
+
+.photocontainer{
+    margin: 100px;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    color: #fff;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    background-color: #2b2b2b;
+    width: 550px;
+    padding: 20px;
+    border: 2px solid #444;
+}
+
+.photoz:hover{
+    transition: 0.1s;
+    transform: scale(1.05);
+	-webkit-transition: 0.1s;
+    border-image: url("data/image/ants.gif") 1 repeat;
+    border-image-width: 3px;
+    padding: 2px;
+    text-decoration: underline;
+}

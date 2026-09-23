@@ -1,0 +1,9 @@
+html{
+    cursor: crosshair;
+    background-color: #384763;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: -100px;
+}
