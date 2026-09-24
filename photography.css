@@ -1,6 +1,6 @@
 html{
     cursor: crosshair;
-    background-color: #1b1b1b;
+    background-image: url("data/image/bg/bg_bars.gif");
     display: flex;
     justify-content: center;
     align-items: center;
