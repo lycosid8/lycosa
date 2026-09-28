@@ -1,9 +1,39 @@
 html{
     cursor: crosshair;
-    background-color: #384763;
+    background-image: url("data/image/bg/bg_bars.gif");
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin-top: -100px;
 }
+
+.welcome{
+    display: block;
+    margin: auto;
+    align-self: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 8em;
+    color: aliceblue;
+    letter-spacing:8px;
+    text-align: center;
+    animation:jitter 3s steps(1,end) infinite;
+    text-shadow:2px 2px 0px #000000;
+    border-image: url("data/image/ants.gif") 1 repeat;
+    cursor: crosshair;
+}
+
+
+@keyframes jitter
+		{
+		0%	{ transform: skew(-7deg) translate(0px, 0px) scalex(1) scaley(1.03) rotate(0deg);}
+		10%	{ transform: skew(0.3deg) translate(-1px, 0px) scalex(1.07) scaley(1) rotate(0deg); }
+		20%	{ transform: skew(2deg) translate(3px, 0px) scalex(1) scaley(1) rotate(0deg); }
+		30%	{ transform: skew(0deg) translate(0px, 2px) scalex(1.08) scaley(1) rotate(0deg); }
+		40%	{ transform: skew(-0.5deg) translate(1px, -5px) scalex(1) scaley(1.004) rotate(0deg); }
+		50%	{ transform: skew(-0.5deg) translate(0px, 0px) scalex(1.1) scaley(1) rotate(0deg); }
+		60%	{ transform: skew(0deg) translate(-3px, 0px) scalex(1) scaley(1) rotate(0deg); }
+		70%	{ transform: skew(0.5deg) translate(-1px, -4px) scalex(0.95) scaley(1) rotate(0deg); }
+		80%	{ transform: skew(3deg) translate(3px, 0px) scalex(1) scaley(1.03) rotate(0deg); }
+		90%	{ transform: skew(1deg) translate(0px, 0px) scalex(1.08) scaley(1) rotate(0deg); }
+		100%	{ transform: skew(-0.5deg) translate(1px, 5px) scalex(1) scaley(1.12) rotate(0deg); }
+		}
+

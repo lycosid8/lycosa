@@ -1,0 +1,46 @@
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: #1b1b1b;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 5px;
+    font-family: monospace;
+    font-size: 16px;
+    color: #f4f4f4;
+    text-align: left;
+    outline: dashed 2.5px;
+    outline-color: #7a7a7a;
+
+}
+
+.title {
+    margin-left: -15px;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 30px;
+    list-style: none;
+    margin-bottom: 8px;
+    text-decoration: underline solid 2px;
+
+}
+
+.subtitle {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    text-decoration: underline;
+    color: #3474ff;
+    font-size: 18px;
+}
+
+.location {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #ccc;
+    font-style: italic;
+    list-style: none;
+    margin-left: -10px;
+    margin-bottom: 5px;
+
+}
