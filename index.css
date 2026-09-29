@@ -2,7 +2,8 @@
 
 html{
     cursor: crosshair;
-    background-image: url('data/image/bg/bg_bars.gif');
+    background-image: url('data/image/bg/transparent.png'),url('data/image/bg/bg_bars.gif');
+    background-blend-mode: difference;
     display: flex;
     justify-content: center;
     align-items: center;
