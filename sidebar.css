@@ -12,7 +12,7 @@
     text-align: left;
     outline: dashed 2.5px;
     outline-color: #7a7a7a;
-
+    cursor: crosshair;
 }
 
 .title {
@@ -26,11 +26,31 @@
 
 }
 
+.button{
+    float: left;
+    width: 130px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: -10px;
+    image-rendering: pixelated;
+    align-self: center;
+    text-align: center;
+}
+
+
 .subtitle {
     margin-bottom: 8px;
     margin-top: 8px;
     text-decoration: underline;
     color: #3474ff;
+    font-size: 18px;
+}
+
+.subtitlewip {
+    margin-bottom: 8px;
+    margin-top: 8px;
+    text-decoration: line-through;
+    color: #ccc;
     font-size: 18px;
 }
 
