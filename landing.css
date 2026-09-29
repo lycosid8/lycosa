@@ -6,8 +6,9 @@ html{
 }
 
 .welcome{
-    display: block;
-    margin: auto;
+    position: absolute;
+    left: 250px;
+    top: -100px;
     align-self: center;
     align-items: center;
     font-family: monospace;
@@ -18,7 +19,6 @@ html{
     animation:jitter 3s steps(1,end) infinite;
     text-shadow:2px 2px 0px #000000;
     border-image: url("data/image/ants.gif") 1 repeat;
-    cursor: crosshair;
 }
 
 
