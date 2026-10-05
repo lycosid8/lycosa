@@ -26,6 +26,10 @@
 
 }
 
+a {
+    cursor: crosshair;
+}
+
 .button{
     float: left;
     width: 130px;

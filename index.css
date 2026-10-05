@@ -3,7 +3,7 @@
 html{
     cursor: crosshair;
     background-image: url('data/image/bg/transparent.png'),url('data/image/bg/bg_bars.gif');
-    background-blend-mode: difference;
+    background-blend-mode: overlay;
     display: flex;
     justify-content: center;
     align-items: center;
