@@ -36,6 +36,28 @@ html{
 
 }
 
+.upd8{
+    color: aliceblue;
+    font-family: monospace;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px;
+    position: absolute;
+    left: 230px;
+    top: 280px;
+    font-size: 20px;
+    margin-top: 215px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px dashed #ccc;
+    cursor: crosshair;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 0px;
+
+}
+
 .content{
     color: aliceblue;
     font-family: monospace;
