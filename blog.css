@@ -6,6 +6,7 @@ html{
     align-items: center;
     min-height: 100vh;
     margin-top: -100px;
+    
 }
 
 .header{
@@ -18,6 +19,10 @@ html{
     text-shadow: #1b1b1b -8px 8px 5px;
 }
 
+a{
+    color: #3474ff;
+}
+
 .sub{
     color: #ccc;
     font-family: monospace;
@@ -26,11 +31,13 @@ html{
     margin-top: 10px;
 }
 
-.photoz{
-    width: 500px;
+.entries{
+    font-family: monospace;
+    font-size: 25px;
+    color: #fff;
 }
 
-.photocontainer{
+.blogcontainer{
     position: absolute;
     left: 250px;
     top: -100px;
@@ -49,12 +56,9 @@ html{
     border: 2px solid #444;
 }
 
-.photoz:hover{
+.entries:hover{
+    color: #fff;
     transition: 0.1s;
     transform: scale(1.05);
 	-webkit-transition: 0.1s;
-    border-image: url("data/image/ants.gif") 1 repeat;
-    border-image-width: 3px;
-    padding: 2px;
-    text-decoration: underline;
 }

@@ -94,6 +94,41 @@ border: solid 2px #f4f4f4;
     cursor: crosshair;
 }
 
+.enter2{
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    border: dashed 2px #fafafa;
+    background-color:#0000FF;
+    padding: 2px;
+    width: 150px;
+    margin: auto;
+    margin-top:10px;
+    transform: rotate(-0deg);
+    letter-spacing:4px;
+    cursor: crosshair;
+
+
+}
+
+.enter2 a{
+    
+    all:unset;
+    position:relative;
+    cursor:crosshair;
+}
+
+.enter2:hover{
+    animation:jitter 0.8s steps(1,end) infinite;
+    text-shadow:2px 2px 0px #e6e6e6;
+    color: #0000FF;
+    background-color:#f4f4f4;
+    border: solid 2px #f4f4f4;
+    border-image: url("data/image/ants.gif") 1 repeat;
+    cursor: crosshair;
+}
+
+
 @keyframes jitter
 		{
 		0%	{ transform: skew(-7deg) translate(0px, 0px) scalex(1) scaley(1.03) rotate(0deg);}
