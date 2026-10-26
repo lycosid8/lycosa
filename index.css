@@ -2,6 +2,7 @@
 
 html{
     cursor: crosshair;
+    z-index: 0;
     background-image: url('data/image/bg/transparent.png'),url('data/image/bg/bg_bars.gif');
     background-blend-mode: overlay;
     display: flex;
@@ -34,6 +35,15 @@ html{
 
 }
 
+.sq{
+    background-repeat: repeat-x;
+    background-image: url("data/image/sqwave.png");
+    position: relative;
+    z-index: 999;
+    background-size: cover;
+    background-position: center;
+    
+}
 
 .pagedoll2{
     width: 270px;
