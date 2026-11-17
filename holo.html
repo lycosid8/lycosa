@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>holocard test</title>
+	<link rel="stylesheet" href="holo.css" />
+</head>
+
+<body>
+
+	<div class="card">
+		<div class="glare"></div>
+		<img class="base" src="https://f2.toyhou.se/file/f2-toyhou-se/images/120567526_debj6gEVXBRsR5C.png" alt="card art" />
+
+		<img class="holo" src="https://media.istockphoto.com/id/1441808390/photo/holographic-rainbow-foil-iridescent-texture-abstract-hologram-background.jpg?s=612x612&w=0&k=20&c=juZic9NlByyQiApiGlHR31Mq-QvZGLxpXHHyxqrDc4E=" alt="the shiny" />
+
+	</div>
+
+	<script>
+		const card = document.querySelector('.card');
+
+		card.addEventListener("mouseenter", () => {
+			card.style.transition = "none";
+		});
+
+		card.addEventListener("mousemove", (event) => {
+			const { top, bottom, left, right } = card.getBoundingClientRect();
+
+			const width = right - left;
+			const height = bottom - top;
+			const middleX = width / 2;
+			const middleY = height / 2;
+
+			const clientX = event.clientX - left;
+			const clientY = event.clientY - top;
+
+			const offsetX = (clientX - middleX) / middleX;
+			const offsetY = (middleY - clientY) / middleY;
+
+			const percentX = (clientX / width) * 100;
+			const percentY = (clientY / height) * 100;
+
+			card.style.setProperty('--x', `${percentX}%`);
+			card.style.setProperty('--y', `${percentY}%`);
+			card.style.transform = `perspective(1000px) rotateY(${offsetX * 15}deg) rotateX(${offsetY * 15}deg) scale3d(1.03, 1.03, 1.03)`;
+		});
+
+		card.addEventListener("mouseleave", () => {
+			card.style.transition = "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)";
+			card.style.transform = `perspective(1000px) rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1)`;
+
+
+			card.style.setProperty('--x', '50%');
+			card.style.setProperty('--y', '50%');
+		});
+	</script>
+
+</body>
+
+</html>

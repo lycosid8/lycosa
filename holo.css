@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+.card {
+    position: relative;
+    width: 500px;
+    height: 700px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 4, 24, 0.6);
+    transform-style: preserve-3d;
+    --x: 50%;
+    --y: 50%;
+}
+
+.base {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.holo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    mix-blend-mode: screen;
+    opacity: 0.5;
+    pointer-events: none;
+    -webkit-mask-image: linear-gradient(115deg,
+            transparent calc(var(--x) - 45%),
+            rgba(0, 0, 0, 1) var(--x),
+            transparent calc(var(--x) + 45%));
+    mask-image: linear-gradient(115deg,
+            transparent calc(var(--x) - 45%),
+            rgba(0, 0, 0, 1) var(--x),
+            transparent calc(var(--x) + 45%));
+}
+
+.glare {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    background: radial-gradient(circle at var(--x) var(--y),
+            rgba(255, 255, 255, 0.8) 0%,
+            rgba(255, 255, 255, 0.2) 30%,
+            transparent 70%);
+    mix-blend-mode: overlay;
+    opacity: 0.35;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.card:hover .glare {
+    opacity: 0.9;
+}
