@@ -7,6 +7,18 @@ body {
 
 }
 
+@property --x {
+    syntax: '<percentage>';
+    inherits: true;
+    initial-value: 50%;
+}
+
+@property --y {
+    syntax: '<percentage>';
+    inherits: true;
+    initial-value: 50%;
+}
+
 .card {
     position: relative;
     width: 500px;

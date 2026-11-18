@@ -11,11 +11,14 @@
 
 	<div class="card">
 		<div class="glare"></div>
-		<img class="base" src="https://f2.toyhou.se/file/f2-toyhou-se/images/120567526_debj6gEVXBRsR5C.png" alt="card art" />
+		<img class="base" src="data/image/photography/DSC_0210.jpg" alt="card art" />
 
-		<img class="holo" src="https://media.istockphoto.com/id/1441808390/photo/holographic-rainbow-foil-iridescent-texture-abstract-hologram-background.jpg?s=612x612&w=0&k=20&c=juZic9NlByyQiApiGlHR31Mq-QvZGLxpXHHyxqrDc4E=" alt="the shiny" />
+		<img class="holo"
+			src="https://media.istockphoto.com/id/1441808390/photo/holographic-rainbow-foil-iridescent-texture-abstract-hologram-background.jpg?s=612x612&w=0&k=20&c=juZic9NlByyQiApiGlHR31Mq-QvZGLxpXHHyxqrDc4E="
+			alt="the shiny" />
 
 	</div>
+
 
 	<script>
 		const card = document.querySelector('.card');
@@ -47,13 +50,13 @@
 		});
 
 		card.addEventListener("mouseleave", () => {
-			card.style.transition = "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1)";
+			card.style.transition = "transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), --x 0.5s cubic-bezier(0.22, 1, 0.36, 1), --y 0.5s cubic-bezier(0.22, 1, 0.36, 1)";
 			card.style.transform = `perspective(1000px) rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1)`;
-
 
 			card.style.setProperty('--x', '50%');
 			card.style.setProperty('--y', '50%');
 		});
+
 	</script>
 
 </body>
