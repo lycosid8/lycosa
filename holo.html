@@ -9,54 +9,52 @@
 
 <body>
 
-	<div class="card-row">
-		<div class="card-wrapper">
-			<div class="card">
-				<div class="glare"></div>
-				<img class="base" src="data/image/photography/DSC_0210.jpg" alt="card art" />
-				<img class="holo" src="data/image/holo.jpg" alt="the shiny" />
-			</div>
-		</div>
+	<div class="card">
+		<div class="glare"></div>
+		<img class="base" src="data/image/photography/DSC_0210.jpg" alt="card art" />
+
+		<img class="holo" src="data/image/holo.jpg" alt="the shiny" />
+
+	</div>
+
+
 	<script>
-		const wrappers = document.querySelectorAll('.card-wrapper');
+		const card = document.querySelector('.card');
 
-		wrappers.forEach((wrapper) => {
-			const card = wrapper.querySelector('.card');
-
-			wrapper.addEventListener("mouseenter", () => {
-				card.style.transition = "none";
-			});
-
-			wrapper.addEventListener("mousemove", (event) => {
-				const { top, bottom, left, right } = wrapper.getBoundingClientRect();
-
-				const width = right - left;
-				const height = bottom - top;
-				const middleX = width / 2;
-				const middleY = height / 2;
-
-				const clientX = event.clientX - left;
-				const clientY = event.clientY - top;
-
-				const offsetX = (clientX - middleX) / middleX;
-				const offsetY = (middleY - clientY) / middleY;
-
-				const percentX = (clientX / width) * 100;
-				const percentY = (clientY / height) * 100;
-
-				card.style.setProperty('--x', `${percentX}%`);
-				card.style.setProperty('--y', `${percentY}%`);
-				card.style.transform = `perspective(1000px) rotateY(${offsetX * 15}deg) rotateX(${offsetY * 15}deg) scale3d(1.03, 1.03, 1.03)`;
-			});
-
-			wrapper.addEventListener("mouseleave", () => {
-				card.style.transition = "transform 1s cubic-bezier(0.22, 1, 0.36, 1), --x 1s cubic-bezier(0.22, 1, 0.36, 1), --y 0.5s cubic-bezier(0.22, 1, 0.36, 1)";
-				card.style.transform = `perspective(1000px) rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1)`;
-
-				card.style.setProperty('--x', '50%');
-				card.style.setProperty('--y', '50%');
-			});
+		card.addEventListener("mouseenter", () => {
+			card.style.transition = "none";
 		});
+
+		card.addEventListener("mousemove", (event) => {
+			const { top, bottom, left, right } = card.getBoundingClientRect();
+
+			const width = right - left;
+			const height = bottom - top;
+			const middleX = width / 2;
+			const middleY = height / 2;
+
+			const clientX = event.clientX - left;
+			const clientY = event.clientY - top;
+
+			const offsetX = (clientX - middleX) / middleX;
+			const offsetY = (middleY - clientY) / middleY;
+
+			const percentX = (clientX / width) * 100;
+			const percentY = (clientY / height) * 100;
+
+			card.style.setProperty('--x', `${percentX}%`);
+			card.style.setProperty('--y', `${percentY}%`);
+			card.style.transform = `perspective(1000px) rotateY(${offsetX * 15}deg) rotateX(${offsetY * 15}deg) scale3d(1.03, 1.03, 1.03)`;
+		});
+
+		card.addEventListener("mouseleave", () => {
+			card.style.transition = "transform 1s cubic-bezier(0.22, 1, 0.36, 1), --x 1s cubic-bezier(0.22, 1, 0.36, 1), --y 0.5s cubic-bezier(0.22, 1, 0.36, 1)";
+			card.style.transform = `perspective(1000px) rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1)`;
+
+			card.style.setProperty('--x', '50%');
+			card.style.setProperty('--y', '50%');
+		});
+
 	</script>
 
 </body>
