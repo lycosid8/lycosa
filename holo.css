@@ -44,8 +44,8 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: 2;
-    mix-blend-mode: screen;
-    opacity: 0.5;
+    mix-blend-mode: color-dodge;
+    opacity: 0.6;
     pointer-events: none;
     -webkit-mask-image: linear-gradient(115deg,
             transparent calc(var(--x) - 45%),
